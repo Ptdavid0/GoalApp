@@ -7,6 +7,7 @@ import {
   Modal,
   Image,
 } from "react-native";
+import { modalBackgroundColor } from "../assets/colors/constants";
 
 const GoalInput = ({ addGoal, modalVisible, handleModalClose }) => {
   const [newGoal, setNewGoal] = useState("");
@@ -39,10 +40,10 @@ const GoalInput = ({ addGoal, modalVisible, handleModalClose }) => {
         <View style={styles.buttonContainer}>
           <Button
             title="Cancel"
-            color="#f31282"
+            color="#ffffff"
             onPress={() => handleModalClose()}
           />
-          <Button title="Save" color="#8b61f4" onPress={handleGoalSave} />
+          <Button title="Save" color="#01ff1b" onPress={handleGoalSave} />
         </View>
       </View>
     </Modal>
@@ -55,11 +56,11 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#311b6b",
+    backgroundColor: modalBackgroundColor,
   },
   input: {
     borderColor: "#e4d0ff",
-    backgroundColor: "#e4d0ff",
+    backgroundColor: "#ffffff",
     borderWidth: 1,
     padding: 16,
     width: "80%",
