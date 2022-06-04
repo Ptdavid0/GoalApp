@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Text, Pressable } from "react-native";
+import { itemBackgroundColor, textColor } from "../assets/colors/constants";
 
 const GoalItem = (props) => {
   const { item, deleteGoalOnClick } = props;
@@ -22,15 +23,23 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
-    // borderRadius: 16,
-    backgroundColor: "#5e0acc",
+    borderRadius: 16,
+    backgroundColor: itemBackgroundColor,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.26,
+    shadowRadius: 2.68,
+    elevation: 7,
   },
   pressedItem: {
-    opacity: 0.8,
+    opacity: 0.6,
   },
   itemText: {
-    color: "white",
-    padding: 20,
+    padding: 30,
+    color: textColor,
   },
 });
 

@@ -22,7 +22,7 @@ const GoalList = ({ currentGoals, deleteGoalOnClick }) => {
 
 const styles = StyleSheet.create({
   listWrapper: {
-    marginVertical: 5,
+    marginVertical: 10,
   },
   flatListContainer: {
     flex: 5,

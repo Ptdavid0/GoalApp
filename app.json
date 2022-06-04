@@ -3,7 +3,7 @@
     "name": "firstTest",
     "slug": "firstTest",
     "version": "1.0.0",
-    "backgroundColor": "#1e085a",
+    "backgroundColor": "#fffdfb",
     "assetBundlePatterns": [
       "**/*"
     ]
