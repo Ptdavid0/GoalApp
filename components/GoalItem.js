@@ -22,8 +22,7 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
-    borderColor: "#aaa",
-    borderWidth: 1,
+    // borderRadius: 16,
     backgroundColor: "#5e0acc",
   },
   pressedItem: {

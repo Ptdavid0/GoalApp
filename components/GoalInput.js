@@ -34,6 +34,7 @@ const GoalInput = ({ addGoal, modalVisible, handleModalClose }) => {
           placeholder="What is your goal ?"
           onChangeText={handleGoalInput}
           defaultValue={newGoal}
+          autoFocus={true}
         />
         <View style={styles.buttonContainer}>
           <Button
