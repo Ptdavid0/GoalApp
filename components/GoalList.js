@@ -7,6 +7,7 @@ const GoalList = ({ currentGoals, deleteGoalOnClick }) => {
     <FlatList
       alwaysBounceVertical={false}
       data={currentGoals}
+      style={styles.flatListContainer}
       renderItem={(itemData) => (
         <View style={styles.listWrapper}>
           <GoalItem
@@ -22,6 +23,11 @@ const GoalList = ({ currentGoals, deleteGoalOnClick }) => {
 const styles = StyleSheet.create({
   listWrapper: {
     marginVertical: 5,
+  },
+  flatListContainer: {
+    flex: 5,
+    marginTop: 10,
+    paddingHorizontal: 50,
   },
 });
 

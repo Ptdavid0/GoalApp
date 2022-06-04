@@ -30,27 +30,25 @@ export default function GoalScreen() {
   };
 
   return (
-    <View>
+    <View style={styles.screnContainer}>
       <Button
         title="Add New Goal"
         color="#995ce9"
         onPress={handleNewGoalClick}
-      ></Button>
+      />
       <GoalInput
         addGoal={handleGoalSave}
         modalVisible={isModalVisible}
         handleModalClose={handleModalClose}
       />
-      <View style={styles.listContainer}>
-        <GoalList currentGoals={goals} deleteGoalOnClick={handleGoalClick} />
-      </View>
+      <GoalList currentGoals={goals} deleteGoalOnClick={handleGoalClick} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  listContainer: {
-    flex: 5,
-    paddingTop: 10,
+  screnContainer: {
+    width: "100%",
+    height: "95%",
   },
 });
